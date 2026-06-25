@@ -1,6 +1,6 @@
 {
   "name": "@shushushv/openclaw-glm-realtime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zhipu GLM Realtime voice provider plugin for OpenClaw",
   "type": "module",
   "license": "MIT",
