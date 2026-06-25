@@ -9,9 +9,14 @@
   "contracts": {
     "realtimeVoiceProviders": ["zhipu"]
   },
-  "providerAuthEnvVars": {
-    "zhipu": [
-      "ZHIPU_API_KEY"
+  "setup": {
+    "providers": [
+      {
+        "id": "zhipu",
+        "envVars": [
+          "ZHIPU_API_KEY"
+        ]
+      }
     ]
   },
   "configSchema": {
