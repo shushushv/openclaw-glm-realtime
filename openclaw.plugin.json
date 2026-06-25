@@ -1,0 +1,22 @@
+{
+  "id": "glm-realtime",
+  "name": "GLM Realtime",
+  "description": "Zhipu GLM Realtime voice provider for OpenClaw (server-VAD streaming voice chat).",
+  "activation": {
+    "onStartup": false
+  },
+  "enabledByDefault": true,
+  "contracts": {
+    "realtimeVoiceProviders": ["zhipu"]
+  },
+  "providerAuthEnvVars": {
+    "zhipu": [
+      "ZHIPU_API_KEY"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

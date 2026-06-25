@@ -1,0 +1,56 @@
+{
+  "name": "@shushushv/openclaw-glm-realtime",
+  "version": "1.0.0",
+  "description": "Zhipu GLM Realtime voice provider plugin for OpenClaw",
+  "type": "module",
+  "license": "MIT",
+  "author": "shushushv <shushushv@proton.me>",
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "realtime",
+    "voice",
+    "glm",
+    "zhipu",
+    "bigmodel"
+  ],
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ws": "8.21.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.6.9"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.14",
+    "openclaw": "2026.6.9",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.0"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.6.9",
+      "minGatewayVersion": "2026.6.9"
+    },
+    "build": {
+      "openclawVersion": "2026.6.9",
+      "pluginSdkVersion": "2026.6.9"
+    }
+  }
+}
