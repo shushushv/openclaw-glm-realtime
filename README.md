@@ -13,7 +13,7 @@ through Zhipu's GLM Realtime API.
 ## Install
 
 ```bash
-clawhub plugin install @shushushv/openclaw-glm-realtime
+openclaw plugins install clawhub:@shushushv/openclaw-glm-realtime
 ```
 
 ## Configure
